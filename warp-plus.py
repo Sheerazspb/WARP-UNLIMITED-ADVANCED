@@ -6,14 +6,10 @@ import string
 import time
 import os
 import sys
-from vars import Var
-
-referrer = (Var.referrer)
-
 os.system("title UnlimitedWrapUsage")
 os.system('cls' if os.name == 'nt' else 'clear')
-print ("[+] Dr.Caduceus")
-
+print ("Script by Dr.Caduceus")
+referrer = "66fd2825-ec77-4b40-9839-4f2240b0a824"
 def genString(stringLength):
 	try:
 		letters = string.ascii_letters + string.digits
@@ -59,7 +55,7 @@ while True:
 	os.system('cls' if os.name == 'nt' else 'clear')
 	animation = ["[■□□□□□□□□□] 10%","[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
 	for i in range(len(animation)):
-		time.sleep(0.2)
+		time.sleep(0.1)
 		sys.stdout.write("\r[∆] Progress: " + animation[i % len(animation)])
 		sys.stdout.flush()
 	result = run()
@@ -68,14 +64,16 @@ while True:
 		print(f"\n[•] WARP+ ID: {referrer}")
 		print(f"[✓] Added: {g} GB")
 		print(f"[#] Total: {g} Good {b} Bad")
-		for i in range(20,-1,-1):
+		for i in range(18,-1,-1):
 			sys.stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
 			sys.stdout.flush()
 			time.sleep(1)
+# Cooldown Timer should be 10 Second
+# Good = Success / Bad = Fail
 	else:
 		b += 1
 		print(f"[#] Total: {g} Good {b} Bad")
-		for i in range(20,-1,-1):
+		for i in range(18,-1,-1):
 			sys.stdout.write(f"\033[1K\r[!] Cooldown: {i} seconds")
 			sys.stdout.flush()
 			time.sleep(1)
